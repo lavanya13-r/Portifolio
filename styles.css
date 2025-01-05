@@ -1,0 +1,87 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the two frames */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Each frame */
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Left Frame (30%) */
+.left-frame {
+    flex: 2; /* 3 parts of total 10 */
+    background-color: #3A3B3C; /* Dark background */
+}
+
+/* Right Frame (70%) */
+.right-frame {
+    flex: 8; /* 7 parts of total 10 */
+    background-color: #4D4D4F; /* Orange background */
+}
+
+/* Profile section in the left frame */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid orange;
+}
+
+.profile h2 {
+    margin: 0;
+    color: orange;
+    font-size: 1.5rem;
+}
+/* Navigation Links in Left Frame */
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation ul li {
+    margin: 10px 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 0; /* Adjust padding for uniform height */
+    width: 150px; /* Fixed width for all links */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block; /* Ensures links take the full width */
+    text-align: center; /* Centers the text */
+}
+
+.navigation ul li a:hover {
+    background-color: orange;
+}
